@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Segunda entrega</title>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div id="topPuntajes"><a href="#">Puntajes</a></div>
+            <div id="cajaTiempo">Tiempo: <span id="tiempo"></span></div>
+        </div>
+        <div id="desafio">
+            <h1>Trivia JS Coderhouse</h1>
+            <p>Pon a prueba tus conocimientos</p>
+        </div>
+        <button id="comenzar">Comenzar</button>
+        <h2 id="pregunta"></h2>
+        <ul id="respuestas"></ul>
+        <div id="cardFinal"></div>
+        <form action="escribirPuntaje()" method="post" id="formMarcador">
+            <label for="name" id="inputNombre"></label>
+            <input type="text" name="name" id="name">
+            <button type="submit">Guardar</button>
+        </form>
+        <div class="botones">
+            <button type="submit" id="volverAtras" style="display: none;" onclick="window.location.href = 'index.html';">Volver atrás</button>
+            <button type="submit" id="borrarPuntajes" style="display: none;">Borrar puntajes</button>
+        </div>
+        <ul id="listaPuntajes"></ul>
+    </div>
+    <script src="./main.js"></script>
+    <script src="./data.js"></script>
+</body>
+</html>
